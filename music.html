@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musixs</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <body>
+  <div class="player">
+    <div class="cover" id="cover"></div>
+    <h2 id="title">Song Title</h2>
+    <h3 id="artist">Artist</h3>
+
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+    </div>
+    <div id="duration">0:00 / 0:00</div>
+
+    <div class="controls">
+      <button onclick="prevSong()">⏮</button>
+      <button onclick="togglePlayPause()" id="play">▶</button>
+      <button onclick="nextSong()">⏭</button>
+    </div>
+
+    <div class="volume">
+      Volume: <input type="range" id="volume" min="0" max="1" step="0.01">
+    </div>
+
+    <div class="playlist" id="playlist"></div>
+  </div>
+
+  <audio id="audio"></audio>
+<script src="music.js"></script>
+</body>
+</html>

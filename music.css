@@ -1,0 +1,83 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        body {
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        }
+        .player {
+        background: #fff;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        width: 350px;
+        text-align: center;
+        }
+        .cover {
+        width: 100%;
+        height: 200px;
+        background: #ddd;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-position: center;
+        }
+        h2, h3 {
+        margin: 10px 0;
+        }
+        .controls {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        }
+        .controls button {
+        background: #1e3c72;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.3s;
+        }
+        .controls button:hover {
+        background: #16305a;
+        }
+        .progress-container {
+        width: 100%;
+        background: #eee;
+        height: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        }
+        .progress {
+        height: 5px;
+        background: #1e3c72;
+        width: 0;
+        border-radius: 5px;
+        }
+        .volume {
+        margin-top: 10px;
+        }
+        input[type="range"] {
+        width: 100%;
+        }
+        .playlist {
+        margin-top: 15px;
+        text-align: left;
+        max-height: 150px;
+        overflow-y: auto;
+        }
+        .playlist div {
+        padding: 8px;
+        cursor: pointer;
+        }
+        .playlist div:hover {
+        background-color: #f0f0f0;
+        }
